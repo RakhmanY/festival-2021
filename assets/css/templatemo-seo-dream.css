@@ -1473,6 +1473,215 @@ Portfolio
 }
 
 
+/* 
+---------------------------------------------
+Vidio Page
+--------------------------------------------- 
+*/
+
+.tm-btn-animate {
+  position: relative;
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.tm-btn-animate:before {
+  left: 0;
+  top: -100%;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  line-height: 2.5;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  font-family: "Font Awesome 5 Free";
+  font-style: normal;
+  font-weight: 900;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+
+.tm-btn-animate:after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.tm-btn-animate:hover:before { top: 13px; }
+
+.tm-btn-animate span {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.3s;
+  -webkit-backface-visibility: hidden;
+  -moz-transition: all 0.3s;
+  -moz-backface-visibility: hidden;
+  transition: all 0.3s;
+  backface-visibility: hidden;
+}
+
+.tm-btn-animate:hover span {
+  -webkit-transform: translateY(300%);
+  -moz-transform: translateY(300%);
+  -ms-transform: translateY(300%);
+  transform: translateY(300%);
+}
+
+.tm-btn-cta {
+  color: white;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.tm-btn-cta:before { font-size: 180%; }
+.tm-btn-download:before { font-size: 120%; }
+.tm-btn-submit:before { font-size: 120%; }
+.tm-icon-down:before { content: '\f078'; }
+.tm-icon-download:before { content: '\f019'; }
+.tm-icon-submit:before { content: '\f1d8'; }
+.tm-icon-submit:hover:before { top: 18px; }
+.tm-btn-cta:hover { color: white; }
+
+.tm-btn-download:hover,
+.tm-btn-download:focus,
+.tm-btn-submit:hover,
+.tm-btn-submit:focus {
+  color: white;
+  background-color: #3399CC;
+}
+
+.tm-btn-download span { padding-top: 10px; }
+.tm-btn-small { 
+  padding: 10.5px 35px;
+  font-size: 1.2rem; 
+}
+
+#tm-video-control-button {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.tm-content-container {
+  max-width: 1422px;
+  padding-top: 80px;
+  padding-bottom: 35px;
+}
+
+.tm-page-title { font-size: 2.5rem; }
+.tm-catalog-item-list { justify-content: space-between; }
+
+.tm-catalog-item {
+  margin-left: 100px;
+  max-width: 462px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 64px;
+}
+
+.tm-thumbnail-container { overflow: hidden; }
+.tm-thumbnail-container img { transition: all 0.3s ease; }
+.tm-thumbnail-container:hover img { transform: scale(1.2) rotate(5deg); }
+
+.tm-img-overlay {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0,0,0,0.4);
+  cursor: pointer;
+  transition: all 0.3s ease: ;
+}
+
+.tm-overlay-icon {
+  color: #a7a7a7;
+  opacity: 1;
+  font-size: 2rem;
+  padding: 10px 15px;
+  background-color: rgba(0,0,0,0.5);
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 8px;
+  z-index: 1002;
+  transition: all 0.3s ease;  
+}
+
+.tm-img-overlay:hover { background-color: transparent; }
+.tm-img-overlay:hover .tm-overlay-icon { opacity: 0; }
+.tm-catalog-item-description { flex: 1; }
+
+.tm-categories-container {
+  display: flex;
+  align-items: center;
+}
+
+.tm-categories-text { margin-right: 16px; }
+.tm-category-list { font-size: 1.75rem; }
+.tm-category-item { margin: 16px; }
+
+.tm-category-link {
+  color: #3399CC;
+  padding: 10px;
+  border-bottom: 3px solid transparent;
+}
+
+.tm-category-link.active,
+.tm-category-link:hover {
+  border-bottom: 3px solid #3399CC;
+  color: #3399CC;
+}
+
+.tm-paging-link {
+  background-color: #F4F4F4;
+  margin-right: 12px;
+  font-size: 1.5rem;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-item.active > .tm-paging-link,
+.nav-item:hover > .tm-paging-link {
+  background-color: #CCC;
+  color: #666666;
+}
+
+.tm-subscribe-form { 
+  display: flex; 
+  align-items: center;
+}
+
+.tm-subscribe-form > input {
+  padding: 5px 15px;
+  margin-right: 20px;
+  flex: 1;
+  max-width: 382px;
+}
+
+.tm-footer-links > li { margin-bottom: 10px; }
+
+/* 
+---------------------------------------------
+Vidio Page
+--------------------------------------------- 
+*/
 
 /* 
 ---------------------------------------------
